@@ -21,10 +21,13 @@ flowchart LR
 
 - **Structured messages.** Messages record sender, recipient, conversation and linked artifacts. The runner routes messages to registered people and agents and launches supported workers. Worker replies include a structured result and the next actor.
 - **Registered roles.** People and agents have registered identities and roles (coordinator, builder, reviewer, owner), used for routing. Authority comes from the owners' authorization, not from what another agent says.
-- **Independent review.** Substantive changes go through independent review. Reviewers return numbered findings, marking which ones block progress. Review packets identify exact artifact versions, and distinguish verified results from incomplete work.
+- **Independent review.** Substantive changes go through independent review by a fresh agent session, separate from the builder, that checks the exact pinned file versions. Reviewers return numbered findings, marking which ones block progress, and findings are resolved within set review limits. Review packets distinguish verified results from incomplete work.
 - **Bounded work units.** Units of work carry an explicit scope, budget and deadline. Overruns and departures are reported.
 - **Owner authorization.** Owner-level actions require the relevant owner's authorization. A "Needs you" view separates real decisions from status updates, and updates are written to be read on a phone.
 - **Releases.** The release process calls for testing, independent review, browser acceptance and a recovery plan. Performance and release safeguards are still being improved.
+- **Projects and sub-projects.** Work is organised into projects, each with a lead conversation, and sub-project groups. The coordinator files related work threads into the right group.
+- **Role terminology.** The team uses simple role names: a portfolio-level coordinator, project and sub-project leads, builders, and independent reviewers (officials). Some lead roles are currently held by the main coordinator while separate leads are being set up.
+- **Per-project working folders.** An opt-in project setting starts that project's builders in the project's own working folder (in use for one project since November 2026). It keeps work organised; it is not a security sandbox.
 - **Scoped work.** Work is scoped to approved files and actions. Production access, credentials, spending and public publication require specific authorization.
 
 ## Where it stands
